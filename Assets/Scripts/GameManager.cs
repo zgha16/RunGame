@@ -44,8 +44,8 @@ public class GameManager : MonoBehaviour {
     public void AddScore(int newScore) {
         if (!isGameover)
         {
-            isGameover = true;
-            gameoverUI.SetActive(true);
+            score += newScore;
+            scoreText.text = "Score : " + score;
         }
     }
 
